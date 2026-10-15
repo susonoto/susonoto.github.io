@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Explore susonoto’s open-source projects, tools, experiments, and code on GitHub.">
+  <title>susonoto — Projects & Experiments</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="config.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="grain"></div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Home">
+      <span class="brand-mark">/</span><span data-owner-name>Open Source Lab</span>
+    </a>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a class="nav-github" data-github-profile href="https://github.com/" target="_blank" rel="noreferrer">GitHub ↗</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span> BUILDING IN PUBLIC · OPEN SOURCE</div>
+        <h1>Ideas into<br><span class="gradient-text">useful software.</span></h1>
+        <p class="hero-lede">A portfolio of projects, tools, and experiments from susonoto. Explore the work, inspect the code, and build on it.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">Explore projects <span>↓</span></a>
+          <a class="button button-quiet" data-github-profile href="https://github.com/" target="_blank" rel="noreferrer">View GitHub <span>↗</span></a>
+        </div>
+        <div class="hero-note"><span class="mono">01 /</span> Open code. Practical ideas. Continuous learning.</div>
+      </div>
+      <div class="hero-art" aria-label="Abstract orbital illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div>
+        <div class="core"><span>OSS</span><i>✳</i></div>
+        <span class="orbit-label label-top">IDEAS</span><span class="orbit-label label-right">CODE</span><span class="orbit-label label-bottom">COMMUNITY</span>
+        <div class="art-caption"><span class="caption-dot"></span> Always in progress</div>
+      </div>
+      <div class="hero-gridline"></div>
+    </section>
+
+    <section class="stats" aria-label="GitHub statistics">
+      <div class="stat"><span class="stat-value" id="repo-count">—</span><span class="stat-label">Public repositories</span></div>
+      <div class="stat"><span class="stat-value" id="star-count">—</span><span class="stat-label">Stars earned</span></div>
+      <div class="stat"><span class="stat-value" id="language-count">—</span><span class="stat-label">Languages used</span></div>
+      <div class="stat"><span class="stat-value" id="updated-date">LIVE</span><span class="stat-label">Synced from GitHub</span></div>
+    </section>
+
+    <section class="projects-section" id="projects">
+      <div class="section-heading">
+        <div><div class="eyebrow">THE WORK</div><h2>Projects worth exploring<span class="accent">.</span></h2></div>
+        <p>Browse the repository shelf. Search by name, topic, or technology.</p>
+      </div>
+      <div class="project-controls">
+        <label class="searchbox"><span>⌕</span><input id="search-input" type="search" placeholder="Search projects, topics, languages…" aria-label="Search repositories"><kbd>/</kbd></label>
+        <div class="filters" id="language-filters" aria-label="Filter by language">
+          <button class="filter active" data-language="all">All projects</button>
+        </div>
+        <select id="sort-select" aria-label="Sort projects">
+          <option value="updated">Recently updated</option>
+          <option value="stars">Most stars</option>
+          <option value="name">Name A–Z</option>
+        </select>
+      </div>
+      <div id="notice" class="notice" role="status">Loading public repositories…</div>
+      <div class="project-grid" id="project-grid"></div>
+      <div class="empty-state" id="empty-state" hidden>
+        <span class="empty-icon">⌕</span><h3>No matching projects</h3><p>Try another keyword or clear the filters.</p>
+        <button class="button button-quiet" id="clear-filters">Clear filters</button>
+      </div>
+      <div class="section-footer"><span class="mono">END OF CURRENT INDEX</span><a data-github-profile href="https://github.com/" target="_blank" rel="noreferrer">See every repository on GitHub ↗</a></div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-symbol"><span>{</span><span class="symbol-dot">✳</span><span>}</span></div>
+      <div class="about-copy">
+        <div class="eyebrow">WHY OPEN SOURCE?</div>
+        <h2>Build openly.<br><span class="gradient-text">Learn together.</span></h2>
+        <p>This space brings projects into one place: what they do, the technologies behind them, and where you can explore the source. Fork an idea, report a bug, suggest a feature, or use the work as a starting point for your own.</p>
+        <div class="about-links">
+          <a data-github-profile href="https://github.com/" target="_blank" rel="noreferrer">Follow the work <span>↗</span></a>
+          <a data-github-issues href="https://github.com/" target="_blank" rel="noreferrer">Discuss an idea <span>↗</span></a>
+        </div>
+      </div>
+      <div class="about-aside"><span class="aside-number">02</span><p>Good software gets better when more people can inspect it, learn from it, and contribute.</p><span class="aside-line"></span></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#"><span class="brand-mark">/</span><span data-owner-name>Open Source Lab</span></a>
+    <span>Made in public <span class="footer-star">✳</span> Powered by GitHub</span>
+    <a data-github-profile href="https://github.com/" target="_blank" rel="noreferrer">SOURCE ↗</a>
+  </footer>
+</body>
+</html>
